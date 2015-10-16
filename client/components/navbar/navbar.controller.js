@@ -1,7 +1,36 @@
 'use strict';
 
+/* TODO: remove jQuery from this? */
+function initNav() {
+  // fix main menu to page on passing
+  $('.main.menu').visibility({
+    type: 'fixed'
+  });
+  
+  $('.overlay').visibility({
+    type: 'fixed',
+    offset: 80
+  });
+
+  // lazy load images
+  $('.image').visibility({
+    type: 'image',
+    transition: 'vertical flip in',
+    duration: 500
+  });
+
+  // show dropdown on hover
+  $('.main.menu  .ui.dropdown').dropdown({
+    on: 'hover'
+  });
+}
+
 angular.module('posterScoresMeanApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
+
+    // init navbar semantic-ui
+    angular.element(document).ready(initNav);
+
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
