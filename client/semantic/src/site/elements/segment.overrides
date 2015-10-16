@@ -1,0 +1,7 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.inverted.masthead.segment {
+  background-image: url("/assets/images/yeoman.png");
+}

@@ -1,0 +1,6 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/* Inverted */
+@invertedBackground: rgba(27, 28, 29, 0);
