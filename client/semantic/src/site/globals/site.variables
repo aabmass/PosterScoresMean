@@ -4,6 +4,7 @@
 
 @fontName: 'Roboto';
 
+/*
 @primaryColor   : @pink;
 @secondaryColor : @grey;
 @red            : #B03060;
@@ -19,3 +20,4 @@
 @brown          : #A52A2A;
 @grey           : #A0A0A0;
 @black          : #000000;
+*/
