@@ -1,7 +1,6 @@
 <!-- Following Menu -->
 <div class="ui large top fixed menu" ng-controller="NavbarCtrl">
   <div class="ui container">
-    <a href="/" class="header item">PosterScores</a>
     <a ng-repeat="item in menu" class="item" ng-class="{active: isActive(item.link)}" ng-href="{{item.link}}">{{item.title}}</a>
     <a ng-show="isAdmin()" class="item" ng-class="{active: isActive('/admin')}" href="/admin">Admin</a>
     <div class="right menu">

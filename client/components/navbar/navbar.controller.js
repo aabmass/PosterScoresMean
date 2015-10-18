@@ -6,7 +6,7 @@ function initNav() {
   $('.main.menu').visibility({
     type: 'fixed'
   });
-  
+
   $('.overlay').visibility({
     type: 'fixed',
     offset: 80
@@ -32,7 +32,7 @@ angular.module('posterScoresMeanApp')
     angular.element(document).ready(initNav);
 
     $scope.menu = [{
-      'title': 'Home',
+      'title': 'PosterScores',
       'link': '/'
     }];
 
