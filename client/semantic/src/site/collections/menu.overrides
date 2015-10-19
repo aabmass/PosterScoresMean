@@ -1,0 +1,7 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.large.top.fixed.menu {
+  background-color: #383b43;
+}

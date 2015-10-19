@@ -527,10 +527,10 @@ module.exports = function (grunt) {
           '<%= yeoman.client %>/index.html': [
                [
 
-                 '.tmp/{app,components}/**/*.js',
-
                  // semantic-ui js, not sure if this is the best place
                  '<%= yeoman.client %>/semantic/dist/semantic.min.js',
+
+                 '.tmp/{app,components}/**/*.js',
 
                  '!{.tmp,<%= yeoman.client %>}/app/app.js',
                  '!{.tmp,<%= yeoman.client %>}/{app,components}/**/*.spec.js',
@@ -572,10 +572,10 @@ module.exports = function (grunt) {
         },
         files: {
           '<%= yeoman.client %>/index.html': [
-            '<%= yeoman.client %>/{app,components}/**/*.css',
-
             // semantic-ui css, not sure if this is the best place
             '<%= yeoman.client %>/semantic/dist/semantic.min.css',
+
+            '<%= yeoman.client %>/{app,components}/**/*.css'
           ]
         }
       }

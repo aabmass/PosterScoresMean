@@ -1,0 +1,8 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.inverted.masthead.segment {
+  background-image: url("/assets/images/2000px-Introduction_sonate_pathetique.svg.png"),
+                    url("/assets/images/dark_tint.png");
+}
