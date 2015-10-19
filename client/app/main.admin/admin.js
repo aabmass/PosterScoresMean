@@ -5,7 +5,7 @@ angular.module('posterScoresMeanApp')
     $stateProvider
       .state('main.admin', {
         url: '/admin',
-        templateUrl: 'app/admin/admin.html',
+        templateUrl: 'app/main.admin/admin.html',
         controller: 'AdminCtrl'
       });
   });
