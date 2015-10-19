@@ -1,7 +1,7 @@
 <!-- Following Menu -->
 <div class="ui large top fixed inverted pointing menu" ng-controller="NavbarCtrl">
   <div class="ui container">
-    <a ng-repeat="item in menu" class="item" ng-class="{active: isActive(item.link)}" ng-href="{{item.link}}">{{item.title}}</a>
+    <a ng-repeat="item in menu" class="item" ng-class="{active: isActive(item.link)}" ui-sref="{{item.state}}">{{item.title}}</a>
     <a ng-show="isAdmin()" class="item" ng-class="{active: isActive('/admin')}" ui-sref="main.admin" >Admin</a>
     <div class="right menu">
       <div ng-show="isLoggedIn()" class="item">Hello {{ getCurrentUser().name }}</div>

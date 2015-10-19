@@ -33,7 +33,7 @@ angular.module('posterScoresMeanApp')
 
     $scope.menu = [{
       'title': 'PosterScores',
-      'link': '/'
+      'state': 'main.index'
     }];
 
     $scope.isCollapsed = true;
