@@ -20,7 +20,7 @@ function initNav() {
   });
 
   // show dropdown on hover
-  $('.main.menu  .ui.dropdown').dropdown({
+  $('.ui.dropdown').dropdown({
     on: 'hover'
   });
 }
