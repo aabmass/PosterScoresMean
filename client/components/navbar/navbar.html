@@ -1,40 +1,38 @@
 <!-- Following Menu -->
 <div class="ui huge top fixed inverted pointing menu" ng-controller="NavbarCtrl">
-  <div class="ui container">
     <a class="header item" ui-sref="main.index">PosterScores</a>
     <a ng-repeat="item in menu" class="item" ng-class="{active: isActive(item.link)}" ui-sref="{{item.state}}">{{item.title}}</a>
     <div class="right menu">
-      <!-- for a logged in user or admin -->
-      <a ng-show="isAdmin()" class="item" ng-class="{active: isActive('/admin')}" ui-sref="main.admin" >Admin</a>
+        <!-- for a logged in user or admin -->
+        <a ng-show="isAdmin()" class="item" ng-class="{active: isActive('/admin')}" ui-sref="main.admin" >Admin</a>
 
-      <div ng-show="isLoggedIn()" class="ui dropdown item">
-        Hello, {{ getCurrentUser().name }}
-        <i class="dropdown icon"></i>
+        <div ng-show="isLoggedIn()" class="ui dropdown item">
+            Hello, {{ getCurrentUser().name }}
+            <i class="dropdown icon"></i>
 
-        <div class="menu">
-          <a class="item" ng-class="{active: isActive('/settings')}" ui-sref="main.settings">
-            <i class="setting icon"></i>
-            Settings
-          </a>
-          <a class="item" ng-class="{active: isActive('/logout')}" href="" ng-click="logout()"><i class="sign out icon"></i>Logout</a>
+            <div class="menu">
+                <a class="item" ng-class="{active: isActive('/settings')}" ui-sref="main.settings">
+                    <i class="setting icon"></i>
+                    Settings
+                </a>
+                <a class="item" ng-class="{active: isActive('/logout')}" href="" ng-click="logout()"><i class="sign out icon"></i>Logout</a>
+            </div>
         </div>
-      </div>
 
-      <!-- login and signup -->
-      <a ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}" class="item" ui-sref="main.login">Login</a>
-      <a ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}" class="item" ui-sref="main.signup">Sign up</a>
+        <!-- login and signup -->
+        <a ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}" class="item" ui-sref="main.login">Login</a>
+        <a ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}" class="item" ui-sref="main.signup">Sign up</a>
     </div>
-  </div>
 </div>
 
 <!-- Sidebar Menu TODO: THIS!!!!-->
 <!--
-<div class="ui vertical inverted sidebar menu">
-  <a class="active item">Home</a>
-  <a class="item">Work</a>
-  <a class="item">Company</a>
-  <a class="item">Careers</a>
-  <a class="item">Login</a>
-  <a class="item">Signup</a>
-</div>
+    <div class="ui vertical inverted sidebar menu">
+    <a class="active item">Home</a>
+    <a class="item">Work</a>
+    <a class="item">Company</a>
+    <a class="item">Careers</a>
+    <a class="item">Login</a>
+    <a class="item">Signup</a>
+    </div>
 -->
