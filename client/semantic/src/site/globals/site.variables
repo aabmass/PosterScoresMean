@@ -2,8 +2,6 @@
      User Global Variables
 *******************************/
 
-@fontName: 'Roboto';
-
 /*
 @primaryColor   : @pink;
 @secondaryColor : @grey;

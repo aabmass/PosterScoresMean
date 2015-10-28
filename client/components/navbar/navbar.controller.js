@@ -31,10 +31,18 @@ angular.module('posterScoresMeanApp')
     // init navbar semantic-ui
     angular.element(document).ready(initNav);
 
-    $scope.menu = [{
-      'title': 'PosterScores',
-      'state': 'main.index'
-    }];
+    $scope.menu = [
+        /** Hard coded into menu for custom styling
+        {
+            'title': 'PosterScores',
+            'state': 'main.index'
+        },
+       */
+        {
+            'title': 'Posters',
+            'state': 'main.poster'
+        }
+    ];
 
     $scope.isCollapsed = true;
     $scope.isLoggedIn = Auth.isLoggedIn;

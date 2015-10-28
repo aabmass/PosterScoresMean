@@ -5,3 +5,7 @@
 .ui.top.fixed.menu {
   background-color: #383b43;
 }
+
+.ui.inverted.menu .header.item {
+    font-size: @huge + 0.5em;
+}
