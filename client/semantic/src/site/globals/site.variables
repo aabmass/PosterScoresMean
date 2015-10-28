@@ -19,3 +19,12 @@
 @grey           : #A0A0A0;
 @black          : #000000;
 */
+
+@primaryColor   : @blue;
+@secondaryColor : @olive;
+
+@red            : #DD5C53;
+@olive          : #9ECD97;
+@teal           : #7ACCC8;
+@blue           : #4AAAA5;
+@grey           : #35404F;

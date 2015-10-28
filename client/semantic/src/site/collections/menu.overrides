@@ -3,7 +3,10 @@
 *******************************/
 
 .ui.top.fixed.menu {
-  background-color: #383b43;
+    // original background color I had
+    // background-color: rgba(56,59,67, 0.3);
+
+    background-color: @grey;
 }
 
 .ui.inverted.menu .header.item {
