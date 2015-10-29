@@ -2,17 +2,17 @@
 
 describe('Service: poster', function () {
 
-  // load the service's module
-  beforeEach(module('posterScoresMeanApp'));
+    // load the service's module
+    beforeEach(module('posterScoresMeanApp'));
 
-  // instantiate service
-  var poster;
-  beforeEach(inject(function (_poster_) {
-    poster = _poster_;
-  }));
+    // instantiate service
+    var Poster;
+    beforeEach(inject(function (_Poster_) {
+        Poster = _Poster_;
+    }));
 
-  it('should do something', function () {
-    expect(!!poster).toBe(true);
-  });
+    it('should do something', function () {
+        expect(!!Poster).toBe(true);
+    });
 
 });

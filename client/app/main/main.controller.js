@@ -1,5 +1,6 @@
 'use strict';
 
 angular.module('posterScoresMeanApp')
-  .controller('MainCtrl', function($scope) {
-  });
+.controller('MainCtrl', function(/* $scope */) {
+
+});
