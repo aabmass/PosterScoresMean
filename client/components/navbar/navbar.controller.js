@@ -2,42 +2,42 @@
 
 /* TODO: remove jQuery from this? */
 function initNav() {
-  // fix main menu to page on passing
-  $('.main.menu').visibility({
-    type: 'fixed'
-  });
+    // fix main menu to page on passing
+    $('.main.menu').visibility({
+        type: 'fixed'
+    });
 
-  $('.overlay').visibility({
-    type: 'fixed',
-    offset: 80
-  });
+    $('.overlay').visibility({
+        type: 'fixed',
+        offset: 80
+    });
 
-  // lazy load images
-  $('.image').visibility({
-    type: 'image',
-    transition: 'vertical flip in',
-    duration: 500
-  });
+    // lazy load images
+    $('.image').visibility({
+        type: 'image',
+        transition: 'vertical flip in',
+        duration: 500
+    });
 
-  // show dropdown on hover
-  $('.ui.dropdown').dropdown({
-    on: 'hover'
-  });
+    // show dropdown on hover
+    $('.ui.dropdown').dropdown({
+        on: 'hover'
+    });
 }
 
 angular.module('posterScoresMeanApp')
-  .controller('NavbarCtrl', function ($scope, $location, Auth) {
+.controller('NavbarCtrl', function ($scope, $location, $state, Auth) {
 
     // init navbar semantic-ui
     angular.element(document).ready(initNav);
 
     $scope.menu = [
         /** Hard coded into menu for custom styling
-        {
-            'title': 'PosterScores',
-            'state': 'main.index'
-        },
-       */
+          {
+          'title': 'PosterScores',
+          'state': 'main.index'
+          },
+          */
         {
             'title': 'Posters',
             'state': 'main.poster'
@@ -50,11 +50,11 @@ angular.module('posterScoresMeanApp')
     $scope.getCurrentUser = Auth.getCurrentUser;
 
     $scope.logout = function() {
-      Auth.logout();
-      $location.path('/login');
+        Auth.logout();
+        $location.path('/login');
     };
 
-    $scope.isActive = function(route) {
-      return route === $location.path();
+    $scope.isActive = function(state) {
+        return $state.is(state);
     };
-  });
+});
